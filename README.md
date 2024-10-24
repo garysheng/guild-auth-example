@@ -2,12 +2,22 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), demonstrating authentication and role-based access control using [Guild.xyz](https://guild.xyz/).
 
+## Working Example
+
+You can see a live demo of this project at: [https://guild-auth-example.vercel.app/](https://guild-auth-example.vercel.app/)
+
 ## Project Overview
 
 This project showcases a simple role-based access control system using Guild.xyz for authentication. Users can access different areas based on their rank within the guild.
 
 ### Home Page
 ![Home Page](/public/readme-images/home.png)
+
+### Sign In - Connect Wallet
+![Sign In - Connect Wallet](/public/readme-images/sign-in-connect-wallet.png)
+
+### Sign In - Verify Guild Membership
+![Sign In - Verify Guild Membership](/public/readme-images/sign-in-verify-guild-membership.png)
 
 ### Profile Page
 ![Profile Page](/public/readme-images/profile.png)

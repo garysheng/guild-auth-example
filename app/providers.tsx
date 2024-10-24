@@ -9,6 +9,7 @@ import { cookieStorage, createStorage, cookieToInitialState, Config } from '@wag
 import { WagmiProvider } from 'wagmi'
 import { AuthProvider } from './contexts/AuthContext'
 import { walletConnect } from '@wagmi/connectors'
+import { Toaster } from 'react-hot-toast'
 
 const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
 if (!projectId) {
@@ -57,6 +58,7 @@ export function ContextProvider({ children, cookies }: { children: React.ReactNo
       <QueryClientProvider client={queryClient}>
         <AuthProvider>
           {children}
+          <Toaster/>
         </AuthProvider>
       </QueryClientProvider>
     </WagmiProvider>
