@@ -82,14 +82,18 @@ export default function SignIn() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900 p-4">
       <h1 className="text-4xl font-bold mb-8">Sign In to Guild Auth Example</h1>
-      
+
       {error && (
         <p className="text-red-500 mb-4">{error}</p>
       )}
-      
+
       <div className="flex flex-col items-center w-full max-w-md">
         {!isConnected ? (
           <div className="space-y-4 w-full">
+            <div className="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 mb-4">
+              <p className="font-bold">Why connect a wallet?</p>
+              <p>Guild accounts are associated with Ethereum addresses. Connecting your wallet allows us to verify your Guild membership and determine your rank.</p>
+            </div>
             <select
               value={selectedConnector || ''}
               onChange={(e) => setSelectedConnector(e.target.value)}
@@ -105,9 +109,8 @@ export default function SignIn() {
             <button
               onClick={handleConnectWallet}
               disabled={!selectedConnector || isAttemptingToJoin}
-              className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105 w-full ${
-                (!selectedConnector || isAttemptingToJoin) ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
+              className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105 w-full ${(!selectedConnector || isAttemptingToJoin) ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
             >
               {isAttemptingToJoin ? 'Connecting...' : 'Connect Wallet'}
             </button>
@@ -115,6 +118,11 @@ export default function SignIn() {
         ) : (
           <div className="space-y-4 w-full">
             <p className="text-center">Connected with {abbreviateAddress(address ?? '')}</p>
+            <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
+              <p className="font-bold">Wallet Connected Successfully!</p>
+              <p>Now it's time to verify your Guild membership. This step checks if you have access to <Link href={`https://guild.xyz/${process.env.NEXT_PUBLIC_GUILD_SLUG}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">a particular Guild</Link> (identified by the slug: {process.env.NEXT_PUBLIC_GUILD_SLUG}).</p>
+              <p>Click the button below to verify your membership and determine your rank within the Guild.</p>
+            </div>
             <button
               onClick={handleSignInAttempt}
               disabled={isAttemptingToJoin}
@@ -131,7 +139,7 @@ export default function SignIn() {
           </div>
         )}
       </div>
-      
+
       <Link href="/" className="mt-8 text-blue-500 hover:text-blue-600 underline">
         Back to Home
       </Link>
