@@ -16,6 +16,9 @@ export default async function RootLayout({
   const cookies = (await headers()).get('cookie') // Await the headers promise
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="font-sans antialiased flex flex-col min-h-screen">
         <ContextProvider cookies={cookies}>
           <Header />

@@ -69,7 +69,7 @@ This project showcases a simple role-based access control system using Guild.xyz
    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
    NEXT_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
-   NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_firebase_measurement_id
+   NEXT_PUBLIC_DEPLOY_SITE_DOMAIN=your_deploy_site_domain
 
    NEXT_PUBLIC_GUILD_ID=your_guild_id
    NEXT_PUBLIC_GUILD_SLUG=your_guild_slug
