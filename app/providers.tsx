@@ -11,7 +11,7 @@ import { AuthProvider } from './contexts/AuthContext'
 import { walletConnect } from '@wagmi/connectors'
 import { Toaster } from 'react-hot-toast'
 
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '';
 if (!projectId) {
   throw new Error('NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID is not provided in the environment variables');
 }
@@ -19,8 +19,8 @@ if (!projectId) {
 const metadata = {
   name: 'Guild Auth Example',
   description: 'Example of Guild.xyz authentication',
-  url: '', // Update this with your actual domain
-  icons: [''] // Update this with your actual icon path
+  url: process.env.NEXT_PUBLIC_DEPLOY_SITE_DOMAIN || '', // Update this with your actual domain
+  icons: ['/favicon.ico'] // Update this with your actual icon path
 }
 
 export const networks = [mainnet, arbitrum]

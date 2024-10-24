@@ -114,7 +114,7 @@ export default function SignIn() {
           </div>
         ) : (
           <div className="space-y-4 w-full">
-            <p className="text-center">Connected with {abbreviateAddress(address)}</p>
+            <p className="text-center">Connected with {abbreviateAddress(address ?? '')}</p>
             <button
               onClick={handleSignInAttempt}
               disabled={isAttemptingToJoin}
