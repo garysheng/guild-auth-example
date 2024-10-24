@@ -1,6 +1,6 @@
 # Guild Auth Example
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), demonstrating authentication and role-based access control using [Guild.xyz](https://guild.xyz/).
+This is a [Next.js](https://nextjs.org/) project demonstrating authentication and role-based access control using [Guild.xyz](https://guild.xyz/). It serves as a practical example for developers looking to integrate Guild.xyz into their web3 applications.
 
 ## Working Example
 
@@ -10,8 +10,19 @@ You can see a live demo of this project at: [https://guild-auth-example.vercel.a
 
 This project showcases a simple role-based access control system using Guild.xyz for authentication. Users can access different areas based on their rank within the guild.
 
-### Home Page
+Key features:
+- Connect your wallet and authenticate with Guild.xyz
+- Access different areas based on your Guild rank
+- Explore a simple town square with rank-gated buildings
+- See Guild's gating features in action
+
+This example serves as a starting point for developers to integrate Guild.xyz into their projects, showcasing the power of Guild's SDK with a practical implementation.
+
+### Home Page (Not Signed In)
 ![Home Page](/public/readme-images/home.png)
+
+### Home Page (Signed In)
+![Home Page Signed In](/public/readme-images/home-signed-in.png)
 
 ### Sign In - Connect Wallet
 ![Sign In - Connect Wallet](/public/readme-images/sign-in-connect-wallet.png)

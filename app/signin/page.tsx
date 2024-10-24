@@ -21,7 +21,7 @@ export default function SignIn() {
   useEffect(() => {
     if (authUser) {
       toast.success('Welcome to Guild Auth Example!');
-      router.push('/profile');
+      router.push('/');
     }
   }, [authUser, router]);
 
