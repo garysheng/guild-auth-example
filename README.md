@@ -22,7 +22,7 @@ This project showcases a simple role-based access control system using Guild.xyz
 ![Journeyman Quarter](/public/readme-images/journeyman-quarter.png)
 
 ### Master's Sanctum (Level 3)
-![Master's Sanctum](/public/readme-images/master-sanctum.png)
+![Master's Sanctum](/public/readme-images/masters-sanctum.png)
 
 ## Getting Started
 
@@ -117,4 +117,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 If you have any questions or need assistance, feel free to reach out to me on Twitter: [@garysheng](https://x.com/garysheng).
-# guild-auth-example
