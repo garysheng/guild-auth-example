@@ -37,19 +37,19 @@ const HomePage: React.FC = () => {
           />
           <h1 className="text-4xl font-bold mb-8">Guild Auth Example</h1>
           <p className="mb-6 text-lg">
-            Welcome to the Guild Auth Example! This app demonstrates how to implement role-based access control using Guild.xyz in a web3 application.
+            Welcome to the Guild Auth Example! This app demonstrates how to implement role-based access control using <a href="https://guild.xyz/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Guild.xyz</a> in a web3 application.
           </p>
           <p className="mb-6">
             Key features:
           </p>
-          <ul className="list-disc list-inside mb-6 text-left text-white">
+          <ul className="list-disc list-inside mb-6 text-left">
             <li>Connect your wallet and authenticate with Guild.xyz</li>
             <li>Access different areas based on your Guild rank</li>
             <li>Explore a simple town square with rank-gated buildings</li>
             <li>See Guild's gating features in action</li>
           </ul>
           <p className="mb-6">
-            This example serves as a starting point for developers to integrate Guild.xyz into their projects, showcasing the power of Guild's SDK with a practical implementation.
+            This example serves as a starting point for developers to integrate Guild.xyz into their projects, showcasing the power of Guild's SDK with a practical implementation. For more information, check out the <a href="https://help.guild.xyz/en/collections/3826821-developer-docs" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Guild.xyz Developer Documentation</a>.
           </p>
           <p className="mb-8">
             Ready to explore? Connect your wallet and join the Guild to get started!
